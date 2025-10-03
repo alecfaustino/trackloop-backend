@@ -1,9 +1,13 @@
 {
   "extends": "@tsconfig/node23/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./"
-  },
+  "outDir": "./dist",
+  "rootDir": "./",
+  "module": "CommonJS",
+  "moduleResolution": "Node",
+  "allowSyntheticDefaultImports": true
+},
   "include": ["**/*.ts"],
-  "exclude": ["dist"]
+  "exclude": ["dist"],
+  
 }
